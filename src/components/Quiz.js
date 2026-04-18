@@ -379,7 +379,7 @@ var Quiz = {
     Quiz.cooldown = true;
     setTimeout(() => {
       Quiz.cooldown = false;
-    }, 2000); // 2s cooldown
+    }, 5000); // 5s cooldown
 
     const gospel = Quiz.gospelName;
     const chapters = Quiz.gospelMap[gospel];
@@ -451,9 +451,9 @@ var Quiz = {
 
     correct.forEach((c, idx) => {
       if (user[idx] === c) {
-        results.unshift("✅ " + Quiz.correctAnswers[idx]);
+        results.push("✅ " + Quiz.correctAnswers[idx]);
       } else {
-        results.unshift("❌ " + Quiz.correctAnswers[idx]);
+        results.push("❌ " + Quiz.correctAnswers[idx]);
         allCorrect = false;
       }
     });
