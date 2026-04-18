@@ -11,8 +11,8 @@ var Menu = {
     return m("nav.menu", [
       m(m.route.Link, { href: "/" }, "Home"),
       m(m.route.Link, { href: "/about" }, "About"),
-      m(m.route.Link, { href: "/tube-cube" }, "Tube Cube"),
-      m(m.route.Link, { href: "/terms" }, "Terms"),
+
+      m(m.route.Link, { href: "/quiz" }, "Quiz"),
     ]);
     // return m("nav", [
     //   m(NavButton, { path: "/", icon: "🏠", label: "Home" }),

@@ -13,6 +13,7 @@
     "vite": "^8.0.4"
   },
   "dependencies": {
-    "mithril": "^2.3.8"
+    "mithril": "^2.3.8",
+    "three": "^0.184.0"
   }
 }

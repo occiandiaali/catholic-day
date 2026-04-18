@@ -12,7 +12,7 @@ var About = {
           `
           In a world filled with so many distractions and demands for our attention, keeping sight on details of our faith may often become challenging. The Catholic Faith is rich in history and ramifications,
           and our catechism may sometimes suffer under the barrage of the world's din. Catholic Day gives a gentle, consistent (and sometimes fun) spotlight to cut through the noise. Do you find it confusing to keep track
-          of the Catholic seasons? Or solemnities? Or daily readings? Catholic Day may be the help you need. A gamified quiz is also available to help keep your memory sharp on the teachings of the faith.
+          of the Catholic seasons? Or solemnities? Or daily readings? Catholic Day may be the help you need, all within your browser - no need for any store downloads. A quiz page is also available to test your knowledge of Gospel verses.
           `,
         ),
         m("h1", "Terms"),

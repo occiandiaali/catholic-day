@@ -61,31 +61,12 @@
 import "./style.css";
 import m from "mithril";
 
-// import Layout from "./views/Layout";
-// import Navbar from "./components/Navbar";
-// import HomeView from "./views/HomeView";
-// import AboutView from "./views/AboutView";
-
-// const routes = m.route(document.body, "/", {
-//   "/": HomeView,
-//   "/about": AboutView,
-// });
-
-// const App = {
-//   view: function () {
-//     return m("div", [m(Navbar), m("div", routes)]);
-//   },
-// };
-
-// m.mount(document.body, App);
 import Home from "./components/Home";
 import About from "./components/About";
-import TubeCube from "./components/TubeCube";
-import Terms from "./components/Terms";
+import Quiz from "./components/Quiz";
 
 m.route(document.body, "/", {
   "/": Home,
   "/about": About,
-  "/tube-cube": TubeCube,
-  "/terms": Terms,
+  "/quiz": Quiz,
 });

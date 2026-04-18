@@ -61,6 +61,8 @@ body {
 */
   background: #7f989c;
   background: linear-gradient(135deg, #7f989c, #311166);
+  min-height: 100vh;
+  padding: 8px;
 }
 
 h1,
@@ -122,7 +124,9 @@ h2 {
 }
 .menu a {
   margin: 6px;
-  color: yellow;
+  /* color: yellow; */
+  color: rgb(81, 10, 148);
+  z-index: 300;
 }
 button {
   background-color: black;
@@ -164,9 +168,32 @@ button:hover {
   color: #666;
 }
 
+.gospelName {
+  width: 200px;
+  padding: 8px;
+}
+
+.selectField {
+  padding: 6px;
+  border: none;
+}
+.inputWithSpaces {
+  padding: 8px;
+  width: 205px;
+}
 @media (max-width: 600px) {
   .main h1 {
     margin-top: 25%;
+  }
+  .header {
+    font-size: xx-large;
+  }
+  /* .namesForm {
+    border: 1px solid black;
+    padding: 6px;
+  } */
+  .namesForm {
+    font-size: small;
   }
 }
 
