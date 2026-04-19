@@ -59,7 +59,10 @@ var Home = {
     return [
       m(Menu),
       m("div.main", [
-        m("h1", "Welcome to Catholic Day"),
+        m("div.h1AndSvgDiv", [
+          m("img[src='/saint-patrick.svg'].stPatSvg"),
+          m("h1", "Welcome to Catholic Day"),
+        ]),
 
         Home.outcome.date
           ? m("p.whiteP", "Date: " + Home.outcome.date)
@@ -139,7 +142,7 @@ var Home = {
         // Date picker
         m("div.datepicker", [
           m("label.whiteP", { for: "jumpDate" }, "Jump to Date: "),
-          m("input[type=date]", {
+          m("input[type=date].jumpDateInput", {
             id: "jumpDate",
             value: Home.currentDate.toISOString().split("T")[0],
             onchange: function (e) {
