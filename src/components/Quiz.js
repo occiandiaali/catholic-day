@@ -451,9 +451,9 @@ var Quiz = {
 
     correct.forEach((c, idx) => {
       if (user[idx] === c) {
-        results.push("✅ " + Quiz.correctAnswers[idx]);
+        results.push(Quiz.correctAnswers[idx] + " ✅");
       } else {
-        results.push("❌ " + Quiz.correctAnswers[idx]);
+        results.push(Quiz.correctAnswers[idx] + " ❌");
         allCorrect = false;
       }
     });
@@ -479,7 +479,7 @@ var Quiz = {
         "Results: " +
         results.join(", ") +
         "\n\n" +
-        "\nThe correct verse is: " +
+        "\nThe full verse is: " +
         Quiz.randomVerse.split(":")[0] +
         ": " +
         reconstructed.join(" ");
@@ -490,7 +490,7 @@ var Quiz = {
     return [
       m(Menu),
       m("div.main", [
-        m("h1.header", "📌 Test your catechism"),
+        m("h1.header", "📌Test your catechism"),
         m("div", [
           // Gospel selector
           m("form.namesForm", [
