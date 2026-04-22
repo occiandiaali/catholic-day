@@ -203,6 +203,13 @@ button:hover {
   padding: 8px;
   width: 205px;
 }
+.inputBlank {
+  padding: 8px;
+  width: 80px;
+  border: none;
+  border-radius: 4px;
+  margin: 2px;
+}
 @media (max-width: 600px) {
   .main h1 {
     margin-top: 25%;
