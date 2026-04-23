@@ -1,11 +1,14 @@
 import m from "mithril";
 import Menu from "./Menu";
+//import CcubModal from "./ccubmodal";
 
 var Home = {
   outcome: {},
   readings: {},
   usccbLink: "",
   currentDate: new Date(), // start with today
+  // showCcModal: false,
+  // readingText: "",
 
   fetchData: function () {
     var year = Home.currentDate.getFullYear();
@@ -103,8 +106,13 @@ var Home = {
                     "Full Readings: ",
                     m(
                       "a",
-                      { href: Home.usccbLink, target: "_blank" },
-                      "View on USCCB",
+                      {
+                        href: Home.usccbLink,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      },
+                      "View in USCCB website",
+                      m("span", { style: { fontSize: "0.9em" } }, "⧉↗"),
                     ),
                   ])
                 : null,

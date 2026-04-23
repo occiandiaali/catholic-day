@@ -175,7 +175,7 @@ var Quiz = {
             ),
           ]),
           // m("p.termsP", "You've chosen: " + Quiz.gospelName),
-          m("p.termsP", "Verses from: " + Quiz.gospelName),
+          m("p.termsP", "Try verses from: " + Quiz.gospelName),
 
           m("label.termsP", [
             "Difficulty Level: ",
